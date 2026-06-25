@@ -7,7 +7,10 @@ auto_stop_machines = true
 force_https = true
 internal_port = 8_080
 min_machines_running = 0
-processes = [ "app = uvicorn api:app --host 0.0.0.0 --port 8080" ]
+processes = [ "app" ]
+
+[processes]
+app = "uvicorn api:app --host 0.0.0.0 --port 8080"
 
 [[vm]]
 cpu_kind = "shared"
