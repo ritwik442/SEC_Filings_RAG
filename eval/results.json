@@ -1,0 +1,345 @@
+{
+  "report": {
+    "exact_figure": {
+      "n": 19,
+      "answer_accuracy": 0.842,
+      "retrieval_hit_rate": 0.789
+    },
+    "synthesis": {
+      "n": 5,
+      "answer_accuracy": 1.0,
+      "retrieval_hit_rate": 1.0
+    },
+    "cross_company": {
+      "n": 6,
+      "answer_accuracy": 0.667,
+      "retrieval_hit_rate": 1.0
+    },
+    "unanswerable": {
+      "n": 5,
+      "answer_accuracy": 1.0,
+      "hallucination_rate": 0.0
+    },
+    "overall": {
+      "n": 35,
+      "answer_accuracy": 0.857
+    }
+  },
+  "results": [
+    {
+      "id": "hw-01",
+      "category": "exact_figure",
+      "question": "What was SpaceX's IPO offer price per share?",
+      "answer": "SpaceX's IPO offer price per share was $135.00.",
+      "ground_truth": "$135.00 per share.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-02",
+      "category": "exact_figure",
+      "question": "By what percentage did SpaceX's total consolidated revenue grow in 2025 compared to 2024?",
+      "answer": "SpaceX's total consolidated revenue for the year ended December 31, 2025 increased by 33.2% compared to the prior year ended December 31, 2024.",
+      "ground_truth": "Total revenue grew approximately 33.2% in 2025.",
+      "correct": true,
+      "retrieval_hit": false
+    },
+    {
+      "id": "hw-03",
+      "category": "exact_figure",
+      "question": "What was Apple's total revenue for the most recent fiscal year in its 10-K?",
+      "answer": "Apple's total revenue (net sales) for the most recent fiscal year 2025 was $416,161 million.",
+      "ground_truth": "Apple reported total revenue of $416.16 billion for fiscal year 2025.",
+      "correct": true,
+      "retrieval_hit": false
+    },
+    {
+      "id": "hw-04",
+      "category": "exact_figure",
+      "question": "How much did NVIDIA report in total revenue in its most recent 10-K?",
+      "answer": "NVIDIA reported total revenue of $215,938 million in its most recent 10-K.",
+      "ground_truth": "NVIDIA reported total revenue of $215.94 billion for fiscal year 2026.",
+      "correct": true,
+      "retrieval_hit": false
+    },
+    {
+      "id": "hw-05",
+      "category": "exact_figure",
+      "question": "What quarterly cash dividend per share did Apple declare in its most recent 10-K?",
+      "answer": "Apple declared a quarterly cash dividend of $0.26 per share as of September 27, 2025.",
+      "ground_truth": "Apple declared a cash dividend of $0.26 per share.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-06",
+      "category": "exact_figure",
+      "question": "How many shares of Class A common stock did SpaceX offer in its IPO?",
+      "answer": "SpaceX offered 555,555,555 shares of Class A common stock in its initial public offering.",
+      "ground_truth": "The number of Class A shares offered SpaceX offered was 555,555,555.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-07",
+      "category": "synthesis",
+      "question": "What does NVIDIA say about its dependence on demand for AI in its risk factors?",
+      "answer": "NVIDIA states that demand for accelerated computing, AI-related cloud services, or large language models is a factor that could impact the timing and volume of their revenue. They highlight that the availability of data centers, energy, and capital to support the buildout of NVIDIA AI infrastructure by customers and partners is crucial, and any shortage of these resources could impact future revenue and financial performance. Expanding energy capacity is described as a complex, multi-year process with significant challenges, and constrained access to capital may delay deployments or reduce the scale of AI adoption, potentially affecting revenue and financial results.",
+      "ground_truth": "NVIDIA states that incorrect estimates regarding the demand for accelerated computing, AI-related cloud services, or large language models can cause mismatches, leading to underestimating or overestimating demand, which impacts the timing and volume of its revenue and creates volatility in revenue or supply levels.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-08",
+      "category": "synthesis",
+      "question": "How does Apple describe competition in its industry?",
+      "answer": "Apple describes competition in its industry as highly competitive and characterized by aggressive price competition, downward pressure on gross margins, continual improvement in product performance, and price sensitivity among consumers and businesses. The markets feature frequent introduction of new products and services, short product life cycles, evolving industry standards, and rapid adoption of technological advancements by competitors. Competitors often compete through aggressive pricing, very low cost structures, and by imitating Apple's products and infringing on its intellectual property. Some competitors have broad product lines, low-priced products, large installed bases of active devices, and large customer bases, and may provide products and services at little or no profit or even at a loss. Competition has been particularly intense with aggressive price cuts and lowered product margins. Apple also notes that it has a minority market share in global smartphone, personal computer, tablet, and wearables markets, some of which have experienced little to no growth or contraction. (Sources: chunks 11, 12, 25)",
+      "ground_truth": "Apple describes its markets as highly competitive and subject to rapid technological change, competing on price, features, quality, and ecosystem, against firms with significant resources.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-09",
+      "category": "synthesis",
+      "question": "What does Tesla disclose about risks related to its dependence on Elon Musk?",
+      "answer": "Tesla discloses that it is highly dependent on the services of Elon Musk, Technoking of Tesla and its Chief Executive Officer. Although Mr. Musk spends significant time with Tesla and is highly active in management, he does not devote his full time and attention to Tesla, as he also holds management positions at Space Exploration Technologies Corp., X.AI Holdings Corp. (\u201cxAI\u201d), Neuralink Corp., The Boring Company, and is involved in other ventures. This dependence on Mr. Musk poses a risk to Tesla's operations and ability to compete. (tsla 10-K chunk 61)",
+      "ground_truth": "Tesla are highly dependent on the services of Elon Musk, Technoking of Tesla and our Chief Executive Officer. Although Musk spends significant time with Tesla and is highly active in our management, he does not devote his full time and attention to Tesla. For example: Mr. Musk also currently holds management positions at Space Exploration Technologies Corp., X Corp., X.AI Corp., Neuralink Corp. and The Boring Company, and is involved in other ventures and with the Department of Government Efficiency.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-10",
+      "category": "cross_company",
+      "question": "Which company reported higher total revenue in its most recent 10-K: Apple or NVIDIA?",
+      "answer": "I couldn't find Apple's total revenue in the provided context. NVIDIA's total revenue for the fiscal year ended January 25, 2026, was $215,938 million as stated in chunk 148.",
+      "ground_truth": "Apple reported higher total revenue ($416,161 million) compared to NVIDIA ($215,938 million) in their most recent 10-K filings",
+      "correct": false,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-11",
+      "category": "cross_company",
+      "question": "Which of the indexed companies mention export controls as a risk factor?",
+      "answer": "Both NVIDIA and SpaceX mention export controls as a risk factor in their filings.",
+      "ground_truth": "NVIDIA and SpaceX mention export controls as a risk factor.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-12",
+      "category": "cross_company",
+      "question": "Compare how a bank (JPMorgan) and a tech company (Apple) frame their primary risks.",
+      "answer": "I couldn't find that in the filing.",
+      "ground_truth": "JPMorgan frames its primary risks around credit, liquidity, capital management, and extensive regulatory compliance, whereas Apple focuses its risk framing on global supply chain logistics, component supply volatility, product transitions, and intense market competition.",
+      "correct": false,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-13",
+      "category": "unanswerable",
+      "question": "What is the home address of SpaceX's CEO as listed in the filing?",
+      "answer": "I couldn't find that in the filing.",
+      "ground_truth": "This information is not disclosed in the filing.",
+      "correct": true,
+      "retrieval_hit": null
+    },
+    {
+      "id": "hw-14",
+      "category": "unanswerable",
+      "question": "How many Starlink satellites does SpaceX plan to launch in 2035?",
+      "answer": "I couldn't find that in the filing.",
+      "ground_truth": "The filing does not provide launch projections for 2035.",
+      "correct": true,
+      "retrieval_hit": null
+    },
+    {
+      "id": "hw-15",
+      "category": "unanswerable",
+      "question": "What will Apple's stock price be at the end of next year?",
+      "answer": "I couldn't find that in the filing.",
+      "ground_truth": "The filing does not and cannot contain future stock price predictions.",
+      "correct": true,
+      "retrieval_hit": null
+    },
+    {
+      "id": "hw-16",
+      "category": "unanswerable",
+      "question": "What is NVIDIA's CEO's personal cell phone number?",
+      "answer": "I couldn't find that in the filing.",
+      "ground_truth": "This information is not disclosed in the filing.",
+      "correct": true,
+      "retrieval_hit": null
+    },
+    {
+      "id": "hw-17",
+      "category": "exact_figure",
+      "question": "What was SpaceX's total revenue for the most recent full fiscal year?",
+      "answer": "SpaceX's total revenue for the year ended December 31, 2025 was $18,674 million.",
+      "ground_truth": "$18.67 billion",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-18",
+      "category": "exact_figure",
+      "question": "How much did SpaceX raise in gross proceeds from its IPO?",
+      "answer": "SpaceX raised $75,000,000,000 in gross proceeds from its IPO, based on the initial public offering price of $135.00 per share as stated in the context: \"Public offering price ................................................................: $135.00, $74,999,999,925\" and \"We will receive approximately $74.4 billion of net proceeds from this offering... based upon the initial public offering price of $135.00 per share.\"",
+      "ground_truth": "$74.4 billion",
+      "correct": false,
+      "retrieval_hit": false
+    },
+    {
+      "id": "hw-19",
+      "category": "exact_figure",
+      "question": "What underwriting discount per share did SpaceX agree to pay?",
+      "answer": "SpaceX agreed to pay an underwriting discount of $0.90 per share of Class A common stock.",
+      "ground_truth": "$0.90",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-20",
+      "category": "exact_figure",
+      "question": "How much did Apple spend on research and development in 2025?",
+      "answer": "Apple spent $27,601 million on research and development in 2025.",
+      "ground_truth": "$34.55 billion",
+      "correct": false,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-21",
+      "category": "exact_figure",
+      "question": "What was NVIDIA's data center segment revenue in the most recent fiscal year?",
+      "answer": "NVIDIA's Data Center segment revenue in the most recent fiscal year (fiscal year 2026) was $193,737 million.",
+      "ground_truth": "$193,737 million",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-22",
+      "category": "exact_figure",
+      "question": "How many vehicles did Tesla deliver in the most recent fiscal year?",
+      "answer": "Tesla delivered approximately 1.64 million consumer vehicles in the most recent fiscal year 2025.",
+      "ground_truth": "1.64 million ",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-23",
+      "category": "exact_figure",
+      "question": "What net interest income did JPMorgan report for the most recent fiscal year?",
+      "answer": "JPMorgan reported net interest income of $95,443 million for the most recent fiscal year ended December 31, 2024.",
+      "ground_truth": "$95.4 billion",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-24",
+      "category": "synthesis",
+      "question": "What does SpaceX say about its dependence on government contracts and customers?",
+      "answer": "SpaceX states that approximately one-fifth of its revenue in 2025 was attributable to agencies within the U.S. federal government. The company acknowledges that supplying services to the U.S. government subjects it to unique risks, including compliance with complex regulations, vulnerability to changes in government priorities or funding levels, and exposure to contractual disputes or audits. Government contracts are subject to unilateral termination, reduction in scope, or delays at the government's convenience, which may result in loss of anticipated future revenue. SpaceX may prioritize its own launch payloads over additional U.S. government contracts or third-party customers, which could limit revenue growth and impact relationships with regulators. The company also notes that government contracts require maintaining facility and personnel security clearances, which involve a lengthy and uncertain process. Failure to comply with government contracting rules and regulations could result in civil or criminal penalties, suspension or debarment from government contracting, or loss of existing or future business. Additionally, SpaceX's significant business relationships with U.S. defense and government agencies may cause it to be perceived as closely aligned with the U.S. government or military, potentially discouraging certain customers and exposing the company to targeting by foreign adversaries. Overall, SpaceX recognizes that its dependence on government contracts involves substantial risks that could materially and adversely affect its business, financial condition, results of operations, and future prospects.",
+      "ground_truth": "SpaceX states that a significant portion of its revenue is derived from government contracts and customers, and any loss, reduction, or delay in these contracts could materially and adversely affect its business and financial condition.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-25",
+      "category": "synthesis",
+      "question": "What does JPMorgan disclose about credit risk in its loan portfolio?",
+      "answer": "JPMorgan Chase & Co. discloses that credit risk is associated with the default or change in credit profile of a client, counterparty, or customer. The Firm's total loans include loans retained (held-for-investment), loans held-for-sale, and certain loans accounted for at fair value, excluding loans classified as trading assets. Credit risk measurement is based on the probability of default, loss severity given default, and exposure at default. The allowance for loan losses reflects estimated credit losses related to consumer and wholesale held-for-investment loan portfolios, lending-related commitments, and investment securities. The Firm regularly reviews the appropriateness of the allowance for credit losses at least quarterly, with credit risk trends and limit exceptions discussed with risk committees, senior management, and the Board of Directors.\n\nJPMorgan uses stress testing to assess potential impacts of alternative economic and business scenarios on estimated credit losses, including macroeconomic factors and additional industry and country-specific stress scenarios. The Firm assesses credit risk by considering borrower characteristics such as FICO scores, loan-to-value (LTV) ratios, geographic distribution of collateral, and delinquency status. For consumer loans, relevant risk characteristics include product type, delinquency status, current FICO scores, geographic distribution, and LTV ratios for collateralized loans. For wholesale loans, relevant characteristics include risk rating, delinquency status, tenor, collateral, line of business, geography, industry, credit enhancement, product type, facility purpose, and payment terms.\n\nThe Firm estimates expected credit losses collectively for exposures sharing similar risk characteristics (\"portfolio-based component\") and individually for exposures that do not (\"asset-specific component\"). The portfolio-based component covers consumer loans, performing risk-rated loans, and certain lending-related commitments, while the asset-specific component covers collateral-dependent loans and risk-rated loans on nonaccrual status.\n\nAt December 31, 2025, the allowance for loan losses for the portfolio-based component of the wholesale and credit card retained loan portfolios was $7.6 billion and $15.6 billion, respectively, on total portfolio-based wholesale and credit card retained loans of $788.0 billion and $247.8 billion, respectively. The allowance represents management\u2019s estimate of expected credit losses over the remaining expected life of the retained loan portfolios, derived using a weighted average of five internally developed macroeconomic scenarios over an eight-quarter forecast period.",
+      "ground_truth": "JPMorgan discloses that its lending activities expose it to inherent credit risk, and increased borrower defaults or adverse economic conditions could significantly harm its financial results.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-26",
+      "category": "cross_company",
+      "question": "How do SpaceX and Tesla differ in how they describe key-person risk related to Elon Musk?",
+      "answer": "SpaceX emphasizes its \"mission-driven, engineering-first culture\" and states that any erosion of this culture, including due to the loss or reduced involvement of Mr. Musk, \"could have a material adverse effect on our business, financial condition, results of operations, and future prospects.\" SpaceX notes that Mr. Musk does not devote his full time to their business and has other significant roles, and they do not maintain key-person life insurance on him. They highlight the difficulty and uncertainty in finding a suitable successor with Mr. Musk's skills and market confidence.\n\nTesla, on the other hand, focuses on the challenge of attracting and retaining senior leadership and a large number of skilled personnel necessary for growth, noting a competitive labor market and the importance of equity-based compensation aligned with shareholder interests. Tesla mentions Mr. Musk's role as Technoking and CEO but discusses key-person risk more in the context of broader leadership and workforce challenges rather than solely on Mr. Musk. Tesla also highlights risks related to Mr. Musk potentially having to sell shares due to personal loan obligations, which could impact stock price.\n\nIn summary, SpaceX centers key-person risk on Mr. Musk's unique leadership and involvement and the cultural impact of his loss, while Tesla frames it within broader leadership and workforce retention challenges and includes financial risks related to Mr. Musk's stock holdings.",
+      "ground_truth": "While SpaceX emphasizes its dependence on Musk's critical leadership and vision, Tesla highlights the risk that he does not devote his full time and attention to the company due to his involvement in other ventures.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-27",
+      "category": "cross_company",
+      "question": "Compare the R&D spending disclosed by Apple and NVIDIA.",
+      "answer": "Apple's research and development (R&D) spending for the most recent period disclosed is $(31,370) million, while NVIDIA's R&D spending is $18,497 million.",
+      "ground_truth": "Apple reported $34.55 billion in research and development expenses, while NVIDIA reported a lower total of $18.5 billion.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-28",
+      "category": "cross_company",
+      "question": "Which indexed companies cite supply chain disruption as a material risk, and how do their concerns differ?",
+      "answer": "Both Apple (AAPL) and SpaceX cite supply chain disruption as a material risk, but their concerns differ in focus and specifics:\n\n- Apple (AAPL) highlights risks related to its global supply chain complexity, with manufacturing and assembly primarily outsourced to countries like China, India, Japan, South Korea, Taiwan, and Vietnam. Apple is concerned about interruptions caused by natural disasters, geopolitical tensions, trade restrictions (tariffs, import/export controls), industrial accidents, pandemics (e.g., COVID-19), and other uncontrollable events. These disruptions can increase costs, delay product delivery, require changing suppliers, and negatively impact consumer demand and the company's reputation.\n\n- SpaceX emphasizes risks from a limited pool of qualified vendors, especially for critical products and AI processors, with reliance on a concentrated group of semiconductor fabrication facilities. Their concerns focus on the time-consuming and potentially unsuccessful process of transitioning to alternative vendors, pricing pressures, quality risks, and the availability of power, water, and telecommunications services essential for their AI compute infrastructure. Disruptions could materially adversely affect their ability to meet customer demands, execute growth strategies, and manage expenses and timelines.\n\nNVIDIA (NVDA) also mentions supply chain disruptions as a risk, noting that such disruptions can cause inability to fulfill orders, delayed sales, lower margins, and lost customers, which could adversely affect financial results, stock price, and reputation. Their concerns include natural disasters, supplier disruptions, and geopolitical events affecting operations and critical infrastructure.\n\nIn summary, Apple focuses on global supply chain complexity and geopolitical/trade risks; SpaceX on vendor concentration and critical infrastructure dependencies for AI products; and NVIDIA on operational disruptions from various natural and man-made events impacting supply and sales.",
+      "ground_truth": "While Apple, Tesla, Nvidia, and SpaceX cite direct material risks to their hardware production and component sourcing, JPMorgan primarily views supply chain disruptions as indirect macroeconomic threats that could impact its clients' creditworthiness.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "hw-29",
+      "category": "unanswerable",
+      "question": "What is SpaceX's projected revenue for 2030?",
+      "answer": "I couldn't find that in the filing.",
+      "ground_truth": "The filing does not and cannot contain revenue predictions for 2030.",
+      "correct": true,
+      "retrieval_hit": null
+    },
+    {
+      "id": "gen-apple-01",
+      "category": "exact_figure",
+      "question": "In which state is Apple Inc. incorporated, per its 10-K?",
+      "answer": "I couldn't find that in the filing.",
+      "ground_truth": "California.",
+      "correct": false,
+      "retrieval_hit": true
+    },
+    {
+      "id": "gen-apple-02",
+      "category": "exact_figure",
+      "question": "What are Apple's reportable operating segments in its 10-K?",
+      "answer": "Apple's reportable operating segments in its 10-K are the Americas, Europe, Greater China, Japan, and Rest of Asia Pacific.",
+      "ground_truth": "Americas, Europe, Greater China, Japan, and Rest of Asia Pacific.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "gen-nvidia-01",
+      "category": "exact_figure",
+      "question": "What are NVIDIA's two primary reporting segments?",
+      "answer": "NVIDIA's two primary reporting segments are \"Compute & Networking\" and \"Graphics.\"",
+      "ground_truth": "Compute & Networking and Graphics.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "gen-tsla-01",
+      "category": "exact_figure",
+      "question": "What year was Tesla incorporated, according to its 10-K?",
+      "answer": "Tesla, Inc. was incorporated in the State of Delaware on July 1, 2003, according to its 10-K.",
+      "ground_truth": "2003.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "gen-jpm-01",
+      "category": "exact_figure",
+      "question": "How many employees did JPMorgan report in its most recent 10-K?",
+      "answer": "JPMorgan reported a total of 318,512 employees as of December 31, 2025.",
+      "ground_truth": "318,512 employees.",
+      "correct": true,
+      "retrieval_hit": true
+    },
+    {
+      "id": "gen-spacex-01",
+      "category": "exact_figure",
+      "question": "On which exchange and under what ticker did SpaceX list in its IPO?",
+      "answer": "SpaceX listed its Class A common stock on The Nasdaq Stock Market LLC (\u201cNasdaq\u201d) and Nasdaq Texas, LLC (\u201cNasdaq Texas\u201d) under the symbol \u201cSPCX.\u201d",
+      "ground_truth": "The Nasdaq Global Select Market under the ticker symbol SPCX.",
+      "correct": true,
+      "retrieval_hit": true
+    }
+  ]
+}

@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 from chunk import chunk_text
 from embed import embed_texts
-from store import VectorStore
+from vectorstore import VectorStore
 
 load_dotenv()
 DATA_DIR = Path("data")
