@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 from retrieve import retrieve
-from store import VectorStore
+from vectorstore import VectorStore
 
 load_dotenv()
 client = OpenAI()

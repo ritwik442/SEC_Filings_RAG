@@ -1,6 +1,6 @@
 
 import sys
-from store import VectorStore
+from vectorstore import VectorStore
 from rag import answer_question
 
 store = VectorStore.load()

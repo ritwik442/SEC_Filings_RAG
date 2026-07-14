@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from rag import answer_question
-from store import VectorStore
+from vectorstore import VectorStore
 import os
 
 load_dotenv()

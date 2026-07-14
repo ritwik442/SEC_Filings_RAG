@@ -1,4 +1,4 @@
-from store import VectorStore
+from vectorstore import VectorStore
 from retrieve import retrieve
 
 store = VectorStore.load()

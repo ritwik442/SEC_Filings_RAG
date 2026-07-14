@@ -1,0 +1,352 @@
+[
+  {
+    "id": "hw-01",
+    "question": "What was SpaceX's IPO offer price per share?",
+    "ground_truth": "$135.00 per share.",
+    "category": "exact_figure",
+    "company": "spacex",
+    "filing_type": "424B4",
+    "expected_source_substring": "135.00",
+    "source": "handwritten"
+  },
+  {
+  "id": "hw-02",
+  "question": "By what percentage did SpaceX's total consolidated revenue grow in 2025 compared to 2024?",
+  "ground_truth": "Total revenue grew approximately 33.2% in 2025.",
+  "category": "exact_figure",
+  "company": "spacex",
+  "filing_type": "424B4",
+  "expected_source_substring": "Total revenue",
+  "source": "handwritten"
+  },
+  {
+    "id": "hw-03",
+    "question": "What was Apple's total revenue for the most recent fiscal year in its 10-K?",
+    "ground_truth": "Apple reported total revenue of $416.16 billion for fiscal year 2025.",
+    "category": "exact_figure",
+    "company": "aapl",
+    "filing_type": "10-K",
+    "expected_source_substring": "416.16",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-04",
+    "question": "How much did NVIDIA report in total revenue in its most recent 10-K?",
+    "ground_truth": "NVIDIA reported total revenue of $215.94 billion for fiscal year 2026.",
+    "category": "exact_figure",
+    "company": "nvda",
+    "filing_type": "10-K",
+    "expected_source_substring": "215.938",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-05",
+    "question": "What quarterly cash dividend per share did Apple declare in its most recent 10-K?",
+    "ground_truth": "Apple declared a cash dividend of $0.26 per share.",
+    "category": "exact_figure",
+    "company": "aapl",
+    "filing_type": "10-K",
+    "expected_source_substring": "0.26",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-06",
+    "question": "How many shares of Class A common stock did SpaceX offer in its IPO?",
+    "ground_truth": "The number of Class A shares offered SpaceX offered was 555,555,555.",
+    "category": "exact_figure",
+    "company": "spacex",
+    "filing_type": "424B4",
+    "expected_source_substring": "555,555,555",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-07",
+    "question": "What does NVIDIA say about its dependence on demand for AI in its risk factors?",
+    "ground_truth": "NVIDIA states that incorrect estimates regarding the demand for accelerated computing, AI-related cloud services, or large language models can cause mismatches, leading to underestimating or overestimating demand, which impacts the timing and volume of its revenue and creates volatility in revenue or supply levels.",
+    "category": "synthesis",
+    "company": "nvda",
+    "filing_type": "10-K",
+    "expected_source_substring": "artificial intelligence",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-08",
+    "question": "How does Apple describe competition in its industry?",
+    "ground_truth": "Apple describes its markets as highly competitive and subject to rapid technological change, competing on price, features, quality, and ecosystem, against firms with significant resources.",
+    "category": "synthesis",
+    "company": "aapl",
+    "filing_type": "10-K",
+    "expected_source_substring": "competitive",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-09",
+    "question": "What does Tesla disclose about risks related to its dependence on Elon Musk?",
+    "ground_truth": "Tesla are highly dependent on the services of Elon Musk, Technoking of Tesla and our Chief Executive Officer. Although Musk spends significant time with Tesla and is highly active in our management, he does not devote his full time and attention to Tesla. For example: Mr. Musk also currently holds management positions at Space Exploration Technologies Corp., X Corp., X.AI Corp., Neuralink Corp. and The Boring Company, and is involved in other ventures and with the Department of Government Efficiency.",
+    "category": "synthesis",
+    "company": "tsla",
+    "filing_type": "10-K",
+    "expected_source_substring": "Elon Musk",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-10",
+    "question": "Which company reported higher total revenue in its most recent 10-K: Apple or NVIDIA?",
+    "ground_truth": "Apple reported higher total revenue ($416,161 million) compared to NVIDIA ($215,938 million) in their most recent 10-K filings",
+    "category": "cross_company",
+    "company": null,
+    "filing_type": null,
+    "expected_source_substring": "revenue",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-11",
+    "question": "Which of the indexed companies mention export controls as a risk factor?",
+    "ground_truth": "NVIDIA and SpaceX mention export controls as a risk factor.",
+    "category": "cross_company",
+    "company": null,
+    "filing_type": null,
+    "expected_source_substring": "export",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-12",
+    "question": "Compare how a bank (JPMorgan) and a tech company (Apple) frame their primary risks.",
+    "ground_truth": "JPMorgan frames its primary risks around credit, liquidity, capital management, and extensive regulatory compliance, whereas Apple focuses its risk framing on global supply chain logistics, component supply volatility, product transitions, and intense market competition.",
+    "category": "cross_company",
+    "company": null,
+    "filing_type": null,
+    "expected_source_substring": "risk",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-13",
+    "question": "What is the home address of SpaceX's CEO as listed in the filing?",
+    "ground_truth": "This information is not disclosed in the filing.",
+    "category": "unanswerable",
+    "company": "spacex",
+    "filing_type": "424B4",
+    "expected_source_substring": null,
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-14",
+    "question": "How many Starlink satellites does SpaceX plan to launch in 2035?",
+    "ground_truth": "The filing does not provide launch projections for 2035.",
+    "category": "unanswerable",
+    "company": "spacex",
+    "filing_type": "424B4",
+    "expected_source_substring": null,
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-15",
+    "question": "What will Apple's stock price be at the end of next year?",
+    "ground_truth": "The filing does not and cannot contain future stock price predictions.",
+    "category": "unanswerable",
+    "company": "aapl",
+    "filing_type": "10-K",
+    "expected_source_substring": null,
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-16",
+    "question": "What is NVIDIA's CEO's personal cell phone number?",
+    "ground_truth": "This information is not disclosed in the filing.",
+    "category": "unanswerable",
+    "company": "nvda",
+    "filing_type": "10-K",
+    "expected_source_substring": null,
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-17",
+    "question": "What was SpaceX's total revenue for the most recent full fiscal year?",
+    "ground_truth": "$18.67 billion",
+    "category": "exact_figure",
+    "company": "spacex",
+    "filing_type": "424B4",
+    "expected_source_substring": "Total revenue",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-18",
+    "question": "How much did SpaceX raise in gross proceeds from its IPO?",
+    "ground_truth": "$74.4 billion",
+    "category": "exact_figure",
+    "company": "spacex",
+    "filing_type": "424B4",
+    "expected_source_substring": "gross proceeds",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-19",
+    "question": "What underwriting discount per share did SpaceX agree to pay?",
+    "ground_truth": "$0.90",
+    "category": "exact_figure",
+    "company": "spacex",
+    "filing_type": "424B4",
+    "expected_source_substring": "Underwriting discounts",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-20",
+    "question": "How much did Apple spend on research and development in 2025?",
+    "ground_truth": "$34.55 billion",
+    "category": "exact_figure",
+    "company": "aapl",
+    "filing_type": "10-K",
+    "expected_source_substring": "Research and development",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-21",
+    "question": "What was NVIDIA's data center segment revenue in the most recent fiscal year?",
+    "ground_truth": "$193,737 million",
+    "category": "exact_figure",
+    "company": "nvda",
+    "filing_type": "10-K",
+    "expected_source_substring": "Data Center",
+    "source": "handwritten"
+  },
+   {
+    "id": "hw-22",
+    "question": "How many vehicles did Tesla deliver in the most recent fiscal year?",
+    "ground_truth": "1.64 million ",
+    "category": "exact_figure",
+    "company": "tsla",
+    "filing_type": "10-K",
+    "expected_source_substring": "delivered",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-23",
+    "question": "What net interest income did JPMorgan report for the most recent fiscal year?",
+    "ground_truth": "$95.4 billion",
+    "category": "exact_figure",
+    "company": "jpm",
+    "filing_type": "10-K",
+    "expected_source_substring": "Net interest income",
+    "source": "handwritten"
+  },
+    {
+    "id": "hw-24",
+    "question": "What does SpaceX say about its dependence on government contracts and customers?",
+    "ground_truth": "SpaceX states that a significant portion of its revenue is derived from government contracts and customers, and any loss, reduction, or delay in these contracts could materially and adversely affect its business and financial condition.",
+    "category": "synthesis",
+    "company": "spacex",
+    "filing_type": "424B4",
+    "expected_source_substring": "government",
+    "source": "handwritten"
+  },
+    {
+    "id": "hw-25",
+    "question": "What does JPMorgan disclose about credit risk in its loan portfolio?",
+    "ground_truth": "JPMorgan discloses that its lending activities expose it to inherent credit risk, and increased borrower defaults or adverse economic conditions could significantly harm its financial results.",
+    "category": "synthesis",
+    "company": "jpm",
+    "filing_type": "10-K",
+    "expected_source_substring": "credit risk",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-26",
+    "question": "How do SpaceX and Tesla differ in how they describe key-person risk related to Elon Musk?",
+    "ground_truth": "While SpaceX emphasizes its dependence on Musk's critical leadership and vision, Tesla highlights the risk that he does not devote his full time and attention to the company due to his involvement in other ventures.",
+    "category": "cross_company",
+    "company": null,
+    "filing_type": null,
+    "expected_source_substring": "Elon Musk",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-27",
+    "question": "Compare the R&D spending disclosed by Apple and NVIDIA.",
+    "ground_truth": "Apple reported $34.55 billion in research and development expenses, while NVIDIA reported a lower total of $18.5 billion.",
+    "category": "cross_company",
+    "company": null,
+    "filing_type": null,
+    "expected_source_substring": "Research and development",
+    "source": "handwritten"
+  },
+  {
+    "id": "hw-28",
+    "question": "Which indexed companies cite supply chain disruption as a material risk, and how do their concerns differ?",
+    "ground_truth": "While Apple, Tesla, Nvidia, and SpaceX cite direct material risks to their hardware production and component sourcing, JPMorgan primarily views supply chain disruptions as indirect macroeconomic threats that could impact its clients' creditworthiness.",
+    "category": "cross_company",
+    "company": null,
+    "filing_type": null,
+    "expected_source_substring": "supply chain",
+    "source": "handwritten"
+  },
+  {
+  "id": "hw-29",
+  "question": "What is SpaceX's projected revenue for 2030?",
+  "ground_truth": "The filing does not and cannot contain revenue predictions for 2030.",
+  "category": "unanswerable",
+  "company": "spacex",
+  "filing_type": "424B4",
+  "expected_source_substring": null,
+  "source": "handwritten"
+  },
+  {
+    "id": "gen-apple-01",
+    "question": "In which state is Apple Inc. incorporated, per its 10-K?",
+    "ground_truth": "California.",
+    "category": "exact_figure",
+    "company": "aapl",
+    "filing_type": "10-K",
+    "expected_source_substring": "California",
+    "source": "generated"
+  },
+  {
+    "id": "gen-apple-02",
+    "question": "What are Apple's reportable operating segments in its 10-K?",
+    "ground_truth": "Americas, Europe, Greater China, Japan, and Rest of Asia Pacific.",
+    "category": "exact_figure",
+    "company": "aapl",
+    "filing_type": "10-K",
+    "expected_source_substring": "Greater China",
+    "source": "generated"
+  },
+  {
+    "id": "gen-nvidia-01",
+    "question": "What are NVIDIA's two primary reporting segments?",
+    "ground_truth": "Compute & Networking and Graphics.",
+    "category": "exact_figure",
+    "company": "nvda",
+    "filing_type": "10-K",
+    "expected_source_substring": "Compute & Networking",
+    "source": "generated"
+  },
+  {
+    "id": "gen-tsla-01",
+    "question": "What year was Tesla incorporated, according to its 10-K?",
+    "ground_truth": "2003.",
+    "category": "exact_figure",
+    "company": "tsla",
+    "filing_type": "10-K",
+    "expected_source_substring": "2003",
+    "source": "generated"
+  },
+  {
+    "id": "gen-jpm-01",
+    "question": "How many employees did JPMorgan report in its most recent 10-K?",
+    "ground_truth": "318,512 employees.",
+    "category": "exact_figure",
+    "company": "jpm",
+    "filing_type": "10-K",
+    "expected_source_substring": "employees",
+    "source": "generated"
+  },
+  {
+    "id": "gen-spacex-01",
+    "question": "On which exchange and under what ticker did SpaceX list in its IPO?",
+    "ground_truth": "The Nasdaq Global Select Market under the ticker symbol SPCX.",
+    "category": "exact_figure",
+    "company": "spacex",
+    "filing_type": "424B4",
+    "expected_source_substring": "SPCX",
+    "source": "generated"
+  }
+]
